@@ -1,0 +1,44 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  <table class="tg">
+    <tr>
+      <th class="tg-s268">Image</th>
+      <th class="tg-s268">ID</th>
+      <th class="tg-s268">Title</th>     
+      <th class="tg-s268">Price</th>
+    </tr>
+    <tr>
+      <td class="tg-0lax"><img heitght="60" width="60" src='#{image_A}'></img></td>
+      <td class="tg-0lax">
+        <input type="text" value="#{id_A}"/> 
+      </td>
+      <td class="tg-0lax">#{title_A}</td>    
+      <td class="tg-0lax"><span>Price: $#{price_A} </span></td>
+    </tr>
+  </table>
+
+  <table class="tg2">
+    <tr>
+      <th class="tg-s268">Image</th>
+      <th class="tg-s268">ID</th>
+      <th class="tg-s268">Title</th>     
+      <th class="tg-s268">Price</th>
+    </tr>
+    <tr>
+      <td class="tg-0lax"><img heitght="60" width="60" src='#{image_B}'></img></td>
+      <td class="tg-0lax">
+         <input type="text" value="#{id_B}"/> 
+      </td>
+      <td class="tg-0lax">#{title_B}</td>    
+      <td class="tg-0lax"><span>Price: $#{price_B} </span></td>
+    </tr>
+  </table>
+
+  <button class="btn btn-info btn-lg" type="button">Start</button>
+
+
+
+  
