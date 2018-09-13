@@ -1,6 +1,8 @@
 extends layout
 
 block content
+  script(src="https://code.jquery.com/jquery-3.3.1.min.js")
+  script(src="/javascripts/main.js")
   h1= title
   p Welcome to #{title}
   <table class="tg">
@@ -11,12 +13,12 @@ block content
       <th class="tg-s268">Price</th>
     </tr>
     <tr>
-      <td class="tg-0lax"><img heitght="60" width="60" src='#{image_A}'></img></td>
+      <td class="tg-0lax"><img id="img_a1" heitght="60" width="60" src='#{image_A}'></img></td>
       <td class="tg-0lax">
-        <input type="text" value="#{id_A}"/> 
+        <input id="id_a1" type="text" value="#{id_A}"/> 
       </td>
-      <td class="tg-0lax">#{title_A}</td>    
-      <td class="tg-0lax"><span>Price: $#{price_A} </span></td>
+      <td  id="title_a1" class="tg-0lax"></td>    
+      <td class="tg-0lax"><span id="price_a1"></span></td>
     </tr>
   </table>
 
@@ -28,17 +30,18 @@ block content
       <th class="tg-s268">Price</th>
     </tr>
     <tr>
-      <td class="tg-0lax"><img heitght="60" width="60" src='#{image_B}'></img></td>
+      <td class="tg-0lax"><img id="img_b1" heitght="60" width="60" src='#{image_B}'></img></td>
       <td class="tg-0lax">
-         <input type="text" value="#{id_B}"/> 
+         <input id="id_a2" type="text" value="#{id_B}"/> 
       </td>
-      <td class="tg-0lax">#{title_B}</td>    
-      <td class="tg-0lax"><span>Price: $#{price_B} </span></td>
+      <td id="title_b1" class="tg-0lax"></td>    
+      <td class="tg-0lax"><span id="price_b1"></span></td>
     </tr>
   </table>
 
-  <button class="btn btn-info btn-lg" type="button">Start</button>
+  <button class="btn btn-info btn-lg" name="start" id="start" type="button">Start</button>
 
+  p#show
 
 
   
